@@ -154,6 +154,48 @@
             margin: 0 auto;
         }
 
+        /* Account Management Section */
+        .account-management {
+            padding: 4rem 2rem;
+            background-color: #FFFFFF; 
+        }
+
+        .account-card {
+            background-color: #F8F9FA;
+            border-left: 4px solid #E9B500;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: left;
+        }
+
+        .account-card-title {
+            font-size: clamp(1.25rem, 3vw, 1.5rem);
+            margin-bottom: 1rem;
+            color: #0A1E3D;
+            font-weight: 700;
+        }
+
+        .account-card-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #6C757D;
+        }
+
+        .support-link {
+            color: #E9B500;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .support-link:hover {
+            color: #0A1E3D;
+            text-decoration: underline;
+        }
+
         /* CTA Section */
         .cta {
             padding: 6rem 2rem;
@@ -249,7 +291,7 @@
                 padding: 4rem 1.5rem;
             }
             
-            .about, .cta {
+            .about, .cta, .account-management {
                 padding: 4rem 1.5rem;
             }
             
@@ -261,7 +303,6 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo-container">
@@ -278,7 +319,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
             <div>
@@ -292,7 +332,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section class="about">
         <div class="container">
             <h2 class="about-title">Gestiona tus Finanzas desde tu Celular</h2>
@@ -304,7 +343,17 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <section class="account-management">
+        <div class="container">
+            <div class="account-card">
+                <h3 class="account-card-title">Gestión y Eliminación de Cuenta</h3>
+                <p class="account-card-text">
+                    Los usuarios pueden gestionar la eliminación de su cuenta desde el menú de Configuración, seleccionando la opción destacada en rojo al final del listado. Asimismo, se encuentra habilitado el correo <a href="mailto:soporte@finzaly.com" class="support-link">soporte@finzaly.com</a> para tramitar dicha solicitud; en este caso, la confirmación de baja se realizará en un periodo de 48 horas.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <section class="cta">
         <div class="container">
             <h2 class="cta-title">Descarga Finzaly Hoy</h2>
@@ -313,7 +362,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo">
